@@ -1,11 +1,16 @@
-const { createApp, ref } = Vue
+const { createApp } = Vue
 
 createApp({
-   setup() {
-   const message = ref('Hello vue!')
-   
-   return {
-      message
+   data() {
+      // return {
+      //    message: 'hello vue!!'
+      // }
+   },
+   methods: {
+      inputSubmit: function() {
+         return {
+            message: 'accipicchia'
+         }
+      }
    }
-   }
-}).mount('#app')
+}).mount('#app');
